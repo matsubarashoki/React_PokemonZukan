@@ -1,0 +1,24 @@
+/* https://hiroyuki-n.github.io/boxShadow_generator/ 
+  boxshadowの値調整ツール
+*/
+.card {
+  width: 290px;
+  box-shadow: 2px 8px 21px -2px #777777;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.cardName {
+  padding: 0;
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cardInfo {
+  text-align: center;
+  margin: auto;
+  border: solid 0.5px;
+  width: 75%;
+  margin-bottom: 5px;
+}
