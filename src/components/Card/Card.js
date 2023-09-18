@@ -1,5 +1,6 @@
 import React from "react";
 import "./Card.css";
+import { TransferPokeName } from "../../utils/transfer-pokeName";
 
 export const Card = ({ pokemon }) => {
   return (
@@ -8,7 +9,8 @@ export const Card = ({ pokemon }) => {
         <div className="cardImg">
           <img src={pokemon.sprites.front_default} alt=""></img>
         </div>
-        <h3 className="cardName">{pokemon.name}</h3>
+        <h3 className="cardName">{TransferPokeName(pokemon.name)}</h3>
+        {/* <h3 className="cardName">{pokemon.name}</h3> */}
         <div className="cardInfo">
           <div className="cardTypes">
             <div>タイプ</div>
