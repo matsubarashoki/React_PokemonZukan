@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { getAllPokemon, getPokemon } from "./utils/pokemon";
 import { Card } from "./components/Card/Card";
 import { Navbar } from "./components/Navbar/Navbar";
+import TestTable from "./components/Table/Table";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [pokemonData, setPokemonData] = useState([]);
@@ -69,6 +70,7 @@ function App() {
         <button onClick={handlePrevPage}>前へ</button>
         <button onClick={handleNextPage}>後へ</button>
       </div>
+      <TestTable />
     </>
   );
 }
